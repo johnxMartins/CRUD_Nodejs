@@ -6,6 +6,9 @@ server.use(express.json());
 
 const cursos = ['FullStack Master', 'Desenvolvimento de games', 'Youtube'];
 
+// CRUD --> Create, Read, Update, Delete
+
+
 // Retorna um curso
 server.get('/cursos/:index', (req, res) => {
     const { index } = req.params;
@@ -46,6 +49,6 @@ server.delete('/cursos/:index', (req, res) => {
 })
 
 
-
+//Insomnia: ferramenta cliente de API REST
 
 server.listen(3000);
